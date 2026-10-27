@@ -1,0 +1,234 @@
+run_comparisons.py
+
+Namespace(algo='ipo', domain1='MiniGrid-ColoredKeysRed-v0', domain2='MiniGrid-ColoredKeysGreen-v0', p1=0.5, model='MiniGrid-ColoredKeysIPO-0', seed=0, log_interval=1, save_interval=1, procs=48, frames=120000, epochs=4, batch_size=256, frames_per_proc=None, discount=0.99, lr=0.0005, gae_lambda=0.95, entropy_coef=0.01, value_loss_coef=0.5, max_grad_norm=0.5, optim_eps=1e-08, optim_alpha=0.99, clip_eps=0.2, recurrence=1, text=False, mem=False)
+
+Device: cuda
+
+run_comparisons.py
+
+Namespace(algo='ipo', domain1='MiniGrid-ColoredKeysRed-v0', domain2='MiniGrid-ColoredKeysGreen-v0', p1=0.5, model='MiniGrid-ColoredKeysIPO-0', seed=0, log_interval=1, save_interval=1, procs=48, frames=120000, epochs=4, batch_size=256, frames_per_proc=None, discount=0.99, lr=0.0005, gae_lambda=0.95, entropy_coef=0.01, value_loss_coef=0.5, max_grad_norm=0.5, optim_eps=1e-08, optim_alpha=0.99, clip_eps=0.2, recurrence=1, text=False, mem=False)
+
+Device: cuda
+
+Environments loaded
+
+Training status loaded
+
+Observations preprocessor loaded
+Model loaded
+
+ACModel_average(
+  (image_conv1): Sequential(
+    (0): Conv2d(3, 16, kernel_size=(2, 2), stride=(1, 1))
+    (1): ReLU()
+    (2): MaxPool2d(kernel_size=(2, 2), stride=(2, 2), padding=0, dilation=1, ceil_mode=False)
+    (3): Conv2d(16, 32, kernel_size=(2, 2), stride=(1, 1))
+    (4): ReLU()
+    (5): Conv2d(32, 64, kernel_size=(2, 2), stride=(1, 1))
+    (6): ReLU()
+  )
+  (actor1): Sequential(
+    (0): Linear(in_features=64, out_features=64, bias=True)
+    (1): Tanh()
+    (2): Linear(in_features=64, out_features=7, bias=True)
+  )
+  (critic1): Sequential(
+    (0): Linear(in_features=64, out_features=64, bias=True)
+    (1): Tanh()
+    (2): Linear(in_features=64, out_features=1, bias=True)
+  )
+  (image_conv2): Sequential(
+    (0): Conv2d(3, 16, kernel_size=(2, 2), stride=(1, 1))
+    (1): ReLU()
+    (2): MaxPool2d(kernel_size=(2, 2), stride=(2, 2), padding=0, dilation=1, ceil_mode=False)
+    (3): Conv2d(16, 32, kernel_size=(2, 2), stride=(1, 1))
+    (4): ReLU()
+    (5): Conv2d(32, 64, kernel_size=(2, 2), stride=(1, 1))
+    (6): ReLU()
+  )
+  (actor2): Sequential(
+    (0): Linear(in_features=64, out_features=64, bias=True)
+    (1): Tanh()
+    (2): Linear(in_features=64, out_features=7, bias=True)
+  )
+  (critic2): Sequential(
+    (0): Linear(in_features=64, out_features=64, bias=True)
+    (1): Tanh()
+    (2): Linear(in_features=64, out_features=1, bias=True)
+  )
+)
+
+Status saved
+Status saved
+Status saved
+Status saved
+Status saved
+Status saved
+Status saved
+Status saved
+Status saved
+Status saved
+Status saved
+Status saved
+Status saved
+Status saved
+Status saved
+Status saved
+Status saved
+Status saved
+run_comparisons.py
+
+Namespace(algo='ipo', domain1='MiniGrid-ColoredKeysRed-v0', domain2='MiniGrid-ColoredKeysGreen-v0', p1=0.5, model='MiniGrid-ColoredKeysIPO-0', seed=0, log_interval=1, save_interval=1, procs=48, frames=120000, epochs=4, batch_size=256, frames_per_proc=None, discount=0.99, lr=0.0005, gae_lambda=0.95, entropy_coef=0.01, value_loss_coef=0.5, max_grad_norm=0.5, optim_eps=1e-08, optim_alpha=0.99, clip_eps=0.2, recurrence=1, text=False, mem=False)
+
+Device: cuda
+
+Environments loaded
+
+Training status loaded
+
+Observations preprocessor loaded
+Model loaded
+
+ACModel_average(
+  (image_conv1): Sequential(
+    (0): Conv2d(3, 16, kernel_size=(2, 2), stride=(1, 1))
+    (1): ReLU()
+    (2): MaxPool2d(kernel_size=(2, 2), stride=(2, 2), padding=0, dilation=1, ceil_mode=False)
+    (3): Conv2d(16, 32, kernel_size=(2, 2), stride=(1, 1))
+    (4): ReLU()
+    (5): Conv2d(32, 64, kernel_size=(2, 2), stride=(1, 1))
+    (6): ReLU()
+  )
+  (actor1): Sequential(
+    (0): Linear(in_features=64, out_features=64, bias=True)
+    (1): Tanh()
+    (2): Linear(in_features=64, out_features=7, bias=True)
+  )
+  (critic1): Sequential(
+    (0): Linear(in_features=64, out_features=64, bias=True)
+    (1): Tanh()
+    (2): Linear(in_features=64, out_features=1, bias=True)
+  )
+  (image_conv2): Sequential(
+    (0): Conv2d(3, 16, kernel_size=(2, 2), stride=(1, 1))
+    (1): ReLU()
+    (2): MaxPool2d(kernel_size=(2, 2), stride=(2, 2), padding=0, dilation=1, ceil_mode=False)
+    (3): Conv2d(16, 32, kernel_size=(2, 2), stride=(1, 1))
+    (4): ReLU()
+    (5): Conv2d(32, 64, kernel_size=(2, 2), stride=(1, 1))
+    (6): ReLU()
+  )
+  (actor2): Sequential(
+    (0): Linear(in_features=64, out_features=64, bias=True)
+    (1): Tanh()
+    (2): Linear(in_features=64, out_features=7, bias=True)
+  )
+  (critic2): Sequential(
+    (0): Linear(in_features=64, out_features=64, bias=True)
+    (1): Tanh()
+    (2): Linear(in_features=64, out_features=1, bias=True)
+  )
+)
+
+Optimizer 1 loaded
+
+Optimizer 2 loaded
+
+U 19 | F 116736 | FPS 2451 | D 2 | rR:μσmM 0.93 0.03 0.78 0.97 | F:μσmM 19.3 7.7 8.0 62.0 | H 1.334 | V 0.826 | pL -0.005 | vL 0.001 | ∇ 0.332
+Status saved
+U 20 | F 122880 | FPS 3159 | D 4 | rR:μσmM 0.93 0.03 0.80 0.97 | F:μσmM 19.4 7.5 8.0 56.0 | H 1.310 | V 0.833 | pL -0.003 | vL 0.001 | ∇ 0.245
+Status saved
+run_comparisons.py
+
+Namespace(algo='ipo', domain1='MiniGrid-ColoredKeysRed-v0', domain2='MiniGrid-ColoredKeysGreen-v0', p1=0.5, model='MiniGrid-ColoredKeysIPO-1', seed=1, log_interval=1, save_interval=1, procs=48, frames=120000, epochs=4, batch_size=256, frames_per_proc=None, discount=0.99, lr=0.0005, gae_lambda=0.95, entropy_coef=0.01, value_loss_coef=0.5, max_grad_norm=0.5, optim_eps=1e-08, optim_alpha=0.99, clip_eps=0.2, recurrence=1, text=False, mem=False)
+
+Device: cuda
+
+Environments loaded
+
+Training status loaded
+
+Observations preprocessor loaded
+Model loaded
+
+ACModel_average(
+  (image_conv1): Sequential(
+    (0): Conv2d(3, 16, kernel_size=(2, 2), stride=(1, 1))
+    (1): ReLU()
+    (2): MaxPool2d(kernel_size=(2, 2), stride=(2, 2), padding=0, dilation=1, ceil_mode=False)
+    (3): Conv2d(16, 32, kernel_size=(2, 2), stride=(1, 1))
+    (4): ReLU()
+    (5): Conv2d(32, 64, kernel_size=(2, 2), stride=(1, 1))
+    (6): ReLU()
+  )
+  (actor1): Sequential(
+    (0): Linear(in_features=64, out_features=64, bias=True)
+    (1): Tanh()
+    (2): Linear(in_features=64, out_features=7, bias=True)
+  )
+  (critic1): Sequential(
+    (0): Linear(in_features=64, out_features=64, bias=True)
+    (1): Tanh()
+    (2): Linear(in_features=64, out_features=1, bias=True)
+  )
+  (image_conv2): Sequential(
+    (0): Conv2d(3, 16, kernel_size=(2, 2), stride=(1, 1))
+    (1): ReLU()
+    (2): MaxPool2d(kernel_size=(2, 2), stride=(2, 2), padding=0, dilation=1, ceil_mode=False)
+    (3): Conv2d(16, 32, kernel_size=(2, 2), stride=(1, 1))
+    (4): ReLU()
+    (5): Conv2d(32, 64, kernel_size=(2, 2), stride=(1, 1))
+    (6): ReLU()
+  )
+  (actor2): Sequential(
+    (0): Linear(in_features=64, out_features=64, bias=True)
+    (1): Tanh()
+    (2): Linear(in_features=64, out_features=7, bias=True)
+  )
+  (critic2): Sequential(
+    (0): Linear(in_features=64, out_features=64, bias=True)
+    (1): Tanh()
+    (2): Linear(in_features=64, out_features=1, bias=True)
+  )
+)
+
+U 1 | F 006144 | FPS 3163 | D 1 | rR:μσmM 0.01 0.09 0.00 0.62 | F:μσmM 2.2 15.1 0.0 106.0 | H 1.940 | V 0.017 | pL 0.002 | vL 0.001 | ∇ 0.077
+Status saved
+U 2 | F 012288 | FPS 3241 | D 3 | rR:μσmM 0.07 0.18 0.00 0.81 | F:μσmM 234.6 41.4 52.0 250.0 | H 1.935 | V 0.018 | pL -0.003 | vL 0.002 | ∇ 0.100
+Status saved
+U 3 | F 018432 | FPS 3164 | D 5 | rR:μσmM 0.11 0.26 0.00 0.88 | F:μσmM 223.3 62.8 32.0 250.0 | H 1.919 | V 0.034 | pL -0.010 | vL 0.004 | ∇ 0.145
+Status saved
+U 4 | F 024576 | FPS 3128 | D 7 | rR:μσmM 0.14 0.25 0.00 0.87 | F:μσmM 219.7 58.6 37.0 250.0 | H 1.930 | V 0.039 | pL 0.005 | vL 0.001 | ∇ 0.093
+Status saved
+U 5 | F 030720 | FPS 3205 | D 9 | rR:μσmM 0.12 0.24 0.00 0.79 | F:μσmM 223.4 55.9 57.0 250.0 | H 1.911 | V 0.058 | pL -0.007 | vL 0.003 | ∇ 0.159
+Status saved
+U 6 | F 036864 | FPS 3261 | D 11 | rR:μσmM 0.22 0.27 0.00 0.92 | F:μσmM 202.6 64.3 22.0 250.0 | H 1.915 | V 0.068 | pL 0.001 | vL 0.003 | ∇ 0.136
+Status saved
+U 7 | F 043008 | FPS 3005 | D 13 | rR:μσmM 0.25 0.29 0.00 0.83 | F:μσmM 195.3 69.3 48.0 250.0 | H 1.910 | V 0.081 | pL -0.014 | vL 0.004 | ∇ 0.183
+Status saved
+U 8 | F 049152 | FPS 3159 | D 15 | rR:μσmM 0.26 0.28 0.00 0.83 | F:μσmM 191.8 65.7 46.0 250.0 | H 1.894 | V 0.101 | pL -0.004 | vL 0.004 | ∇ 0.213
+Status saved
+U 9 | F 055296 | FPS 3159 | D 17 | rR:μσmM 0.46 0.31 0.00 0.94 | F:μσmM 144.9 78.4 16.0 250.0 | H 1.827 | V 0.153 | pL -0.031 | vL 0.009 | ∇ 0.302
+Status saved
+U 10 | F 061440 | FPS 3066 | D 19 | rR:μσmM 0.64 0.25 0.00 0.94 | F:μσmM 97.9 66.9 18.0 250.0 | H 1.765 | V 0.260 | pL -0.052 | vL 0.014 | ∇ 0.433
+Status saved
+U 11 | F 067584 | FPS 3213 | D 21 | rR:μσmM 0.77 0.18 0.14 0.96 | F:μσmM 65.0 49.9 12.0 239.0 | H 1.640 | V 0.438 | pL -0.072 | vL 0.016 | ∇ 0.500
+Status saved
+U 12 | F 073728 | FPS 3120 | D 23 | rR:μσmM 0.86 0.10 0.22 0.97 | F:μσmM 38.4 26.6 9.0 218.0 | H 1.491 | V 0.614 | pL -0.076 | vL 0.011 | ∇ 0.440
+Status saved
+U 13 | F 079872 | FPS 3110 | D 25 | rR:μσmM 0.89 0.08 0.00 0.97 | F:μσmM 29.4 21.9 8.0 250.0 | H 1.401 | V 0.719 | pL -0.038 | vL 0.006 | ∇ 0.412
+Status saved
+U 14 | F 086016 | FPS 3129 | D 27 | rR:μσmM 0.91 0.05 0.68 0.97 | F:μσmM 25.4 13.4 8.0 88.0 | H 1.389 | V 0.776 | pL -0.009 | vL 0.004 | ∇ 0.370
+Status saved
+U 15 | F 092160 | FPS 3063 | D 29 | rR:μσmM 0.92 0.04 0.70 0.97 | F:μσmM 23.5 11.3 7.0 82.0 | H 1.381 | V 0.791 | pL -0.005 | vL 0.002 | ∇ 0.289
+Status saved
+U 16 | F 098304 | FPS 3148 | D 31 | rR:μσmM 0.92 0.03 0.77 0.97 | F:μσmM 22.0 9.4 8.0 64.0 | H 1.324 | V 0.813 | pL -0.009 | vL 0.002 | ∇ 0.240
+Status saved
+U 17 | F 104448 | FPS 3060 | D 33 | rR:μσmM 0.93 0.03 0.78 0.97 | F:μσmM 20.4 8.6 8.0 61.0 | H 1.318 | V 0.826 | pL -0.001 | vL 0.002 | ∇ 0.282
+Status saved
+U 18 | F 110592 | FPS 3040 | D 35 | rR:μσmM 0.93 0.03 0.80 0.97 | F:μσmM 19.3 7.6 7.0 56.0 | H 1.284 | V 0.836 | pL -0.006 | vL 0.001 | ∇ 0.211
+Status saved
+U 19 | F 116736 | FPS 3025 | D 37 | rR:μσmM 0.93 0.03 0.76 0.97 | F:μσmM 19.0 8.6 8.0 66.0 | H 1.328 | V 0.836 | pL 0.008 | vL 0.001 | ∇ 0.219
+Status saved
+U 20 | F 122880 | FPS 3063 | D 39 | rR:μσmM 0.93 0.03 0.67 0.97 | F:μσmM 20.3 9.3 8.0 92.0 | H 1.334 | V 0.828 | pL 0.005 | vL 0.001 | ∇ 0.242
+Status saved

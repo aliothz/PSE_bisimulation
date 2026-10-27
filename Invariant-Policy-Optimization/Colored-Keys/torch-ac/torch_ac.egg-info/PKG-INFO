@@ -1,0 +1,10 @@
+Metadata-Version: 2.4
+Name: torch_ac
+Version: 1.1.0
+Keywords: reinforcement learning,actor-critic,a2c,ppo,multi-processes,gpu
+License-File: LICENSE
+Requires-Dist: numpy>=1.13.0
+Requires-Dist: torch>=1.0.0
+Dynamic: keywords
+Dynamic: license-file
+Dynamic: requires-dist

@@ -1,0 +1,171 @@
+Device: cuda
+
+Round:  0 
+
+Training agent
+run_comparisons.py
+
+Namespace(algo='ppo', domain1='MiniGrid-ColoredKeysRed-v0', domain2='MiniGrid-ColoredKeysGreen-v0', p1=0.5, model='MiniGrid-ColoredKeysPPO-0', seed=0, log_interval=1, save_interval=1, procs=48, frames=120000, epochs=4, batch_size=256, frames_per_proc=None, discount=0.99, lr=0.001, gae_lambda=0.95, entropy_coef=0.01, value_loss_coef=0.5, max_grad_norm=0.5, optim_eps=1e-08, optim_alpha=0.99, clip_eps=0.2, recurrence=1, text=False, mem=False)
+
+Device: cuda
+
+Environments loaded
+
+Training status loaded
+
+Observations preprocessor loaded
+Model loaded
+
+ACModel(
+  (image_conv): Sequential(
+    (0): Conv2d(3, 16, kernel_size=(2, 2), stride=(1, 1))
+    (1): ReLU()
+    (2): MaxPool2d(kernel_size=(2, 2), stride=(2, 2), padding=0, dilation=1, ceil_mode=False)
+    (3): Conv2d(16, 32, kernel_size=(2, 2), stride=(1, 1))
+    (4): ReLU()
+    (5): Conv2d(32, 64, kernel_size=(2, 2), stride=(1, 1))
+    (6): ReLU()
+  )
+  (actor): Sequential(
+    (0): Linear(in_features=64, out_features=64, bias=True)
+    (1): Tanh()
+    (2): Linear(in_features=64, out_features=7, bias=True)
+  )
+  (critic): Sequential(
+    (0): Linear(in_features=64, out_features=64, bias=True)
+    (1): Tanh()
+    (2): Linear(in_features=64, out_features=1, bias=True)
+  )
+)
+
+U 1 | F 006144 | FPS 3465 | D 1 | rR:μσmM 0.00 0.00 0.00 0.00 | F:μσmM 0.0 0.0 0 0 | H 1.935 | V 0.097 | pL 0.014 | vL 0.000 | ∇ 0.012
+Status saved
+U 2 | F 012288 | FPS 4809 | D 3 | rR:μσmM 0.02 0.11 0.00 0.74 | F:μσmM 3.0 20.6 0.0 144.0 | H 1.941 | V 0.083 | pL 0.013 | vL 0.000 | ∇ 0.007
+Status saved
+U 3 | F 018432 | FPS 4679 | D 4 | rR:μσmM 0.03 0.13 0.00 0.74 | F:μσmM 8.6 43.1 0.0 268.0 | H 1.941 | V 0.073 | pL 0.010 | vL 0.000 | ∇ 0.005
+Status saved
+U 4 | F 024576 | FPS 4711 | D 5 | rR:μσmM 0.03 0.13 0.00 0.74 | F:μσmM 478.2 58.1 144.0 490.0 | H 1.937 | V 0.056 | pL 0.020 | vL 0.000 | ∇ 0.006
+Status saved
+U 5 | F 030720 | FPS 4917 | D 6 | rR:μσmM 0.02 0.12 0.00 0.85 | F:μσmM 481.4 58.7 79.0 490.0 | H 1.943 | V 0.050 | pL 0.006 | vL 0.001 | ∇ 0.006
+Status saved
+U 6 | F 036864 | FPS 4773 | D 8 | rR:μσmM 0.04 0.16 0.00 0.85 | F:μσmM 472.0 73.1 79.0 490.0 | H 1.941 | V 0.045 | pL 0.005 | vL 0.000 | ∇ 0.007
+Status saved
+U 7 | F 043008 | FPS 4740 | D 9 | rR:μσmM 0.06 0.18 0.00 0.85 | F:μσmM 462.2 80.6 79.0 490.0 | H 1.941 | V 0.036 | pL 0.003 | vL 0.000 | ∇ 0.006
+Status saved
+U 8 | F 049152 | FPS 4502 | D 10 | rR:μσmM 0.07 0.18 0.00 0.85 | F:μσmM 460.4 80.6 79.0 490.0 | H 1.942 | V 0.029 | pL 0.008 | vL 0.000 | ∇ 0.005
+Status saved
+U 9 | F 055296 | FPS 4586 | D 12 | rR:μσmM 0.06 0.15 0.00 0.63 | F:μσmM 467.8 63.1 200.0 490.0 | H 1.942 | V 0.027 | pL 0.002 | vL 0.000 | ∇ 0.005
+Status saved
+U 10 | F 061440 | FPS 4805 | D 13 | rR:μσmM 0.06 0.17 0.00 0.75 | F:μσmM 464.5 75.1 134.0 490.0 | H 1.940 | V 0.029 | pL -0.001 | vL 0.000 | ∇ 0.010
+Status saved
+U 11 | F 067584 | FPS 4567 | D 14 | rR:μσmM 0.09 0.18 0.00 0.75 | F:μσmM 453.5 80.5 134.0 490.0 | H 1.937 | V 0.031 | pL 0.002 | vL 0.000 | ∇ 0.007
+Status saved
+U 12 | F 073728 | FPS 4451 | D 16 | rR:μσmM 0.09 0.18 0.00 0.75 | F:μσmM 452.9 80.3 134.0 490.0 | H 1.940 | V 0.022 | pL 0.006 | vL 0.000 | ∇ 0.006
+Status saved
+U 13 | F 079872 | FPS 4744 | D 17 | rR:μσmM 0.07 0.17 0.00 0.75 | F:μσmM 460.6 71.2 134.0 490.0 | H 1.941 | V 0.020 | pL 0.002 | vL 0.000 | ∇ 0.003
+Status saved
+U 14 | F 086016 | FPS 4583 | D 18 | rR:μσmM 0.06 0.16 0.00 0.58 | F:μσmM 465.6 71.8 226.0 490.0 | H 1.939 | V 0.023 | pL -0.002 | vL 0.000 | ∇ 0.011
+Status saved
+U 15 | F 092160 | FPS 4645 | D 20 | rR:μσmM 0.07 0.17 0.00 0.58 | F:μσmM 460.4 74.5 226.0 490.0 | H 1.941 | V 0.017 | pL 0.001 | vL 0.000 | ∇ 0.004
+Status saved
+U 16 | F 098304 | FPS 4495 | D 21 | rR:μσmM 0.12 0.22 0.00 0.85 | F:μσmM 439.0 100.1 80.0 490.0 | H 1.937 | V 0.021 | pL -0.004 | vL 0.001 | ∇ 0.017
+Status saved
+U 17 | F 104448 | FPS 4672 | D 22 | rR:μσmM 0.14 0.23 0.00 0.85 | F:μσmM 431.9 106.2 80.0 490.0 | H 1.933 | V 0.027 | pL -0.006 | vL 0.001 | ∇ 0.015
+Status saved
+U 18 | F 110592 | FPS 4549 | D 24 | rR:μσmM 0.22 0.29 0.00 0.85 | F:μσmM 391.4 132.3 80.0 490.0 | H 1.926 | V 0.033 | pL -0.011 | vL 0.001 | ∇ 0.018
+Status saved
+U 19 | F 116736 | FPS 4659 | D 25 | rR:μσmM 0.31 0.28 0.00 0.85 | F:μσmM 356.3 134.6 80.0 490.0 | H 1.919 | V 0.036 | pL -0.004 | vL 0.001 | ∇ 0.018
+Status saved
+U 20 | F 122880 | FPS 3989 | D 27 | rR:μσmM 0.27 0.30 0.00 0.83 | F:μσmM 373.8 143.7 95.0 490.0 | H 1.913 | V 0.045 | pL -0.007 | vL 0.002 | ∇ 0.022
+Status saved
+Environments loaded
+
+Agent loaded
+
+Round:  1 
+
+Training agent
+run_comparisons.py
+
+Namespace(algo='ppo', domain1='MiniGrid-ColoredKeysRed-v0', domain2='MiniGrid-ColoredKeysGreen-v0', p1=0.5, model='MiniGrid-ColoredKeysPPO-1', seed=1, log_interval=1, save_interval=1, procs=48, frames=120000, epochs=4, batch_size=256, frames_per_proc=None, discount=0.99, lr=0.001, gae_lambda=0.95, entropy_coef=0.01, value_loss_coef=0.5, max_grad_norm=0.5, optim_eps=1e-08, optim_alpha=0.99, clip_eps=0.2, recurrence=1, text=False, mem=False)
+
+Device: cuda
+
+Environments loaded
+
+Training status loaded
+
+Observations preprocessor loaded
+Model loaded
+
+ACModel(
+  (image_conv): Sequential(
+    (0): Conv2d(3, 16, kernel_size=(2, 2), stride=(1, 1))
+    (1): ReLU()
+    (2): MaxPool2d(kernel_size=(2, 2), stride=(2, 2), padding=0, dilation=1, ceil_mode=False)
+    (3): Conv2d(16, 32, kernel_size=(2, 2), stride=(1, 1))
+    (4): ReLU()
+    (5): Conv2d(32, 64, kernel_size=(2, 2), stride=(1, 1))
+    (6): ReLU()
+  )
+  (actor): Sequential(
+    (0): Linear(in_features=64, out_features=64, bias=True)
+    (1): Tanh()
+    (2): Linear(in_features=64, out_features=7, bias=True)
+  )
+  (critic): Sequential(
+    (0): Linear(in_features=64, out_features=64, bias=True)
+    (1): Tanh()
+    (2): Linear(in_features=64, out_features=1, bias=True)
+  )
+)
+
+U 1 | F 006144 | FPS 4804 | D 1 | rR:μσmM 0.00 0.00 0.00 0.00 | F:μσmM 0.0 0.0 0 0 | H 1.933 | V -0.096 | pL -0.020 | vL 0.001 | ∇ 0.031
+Status saved
+U 2 | F 012288 | FPS 4588 | D 2 | rR:μσmM 0.02 0.11 0.00 0.74 | F:μσmM 2.9 20.0 0.0 140.0 | H 1.938 | V -0.069 | pL -0.014 | vL 0.001 | ∇ 0.011
+Status saved
+U 3 | F 018432 | FPS 4724 | D 3 | rR:μσmM 0.04 0.15 0.00 0.74 | F:μσmM 13.8 55.5 0.0 264.0 | H 1.938 | V -0.053 | pL -0.011 | vL 0.000 | ∇ 0.008
+Status saved
+U 4 | F 024576 | FPS 4439 | D 5 | rR:μσmM 0.04 0.15 0.00 0.74 | F:μσmM 473.2 66.6 140.0 490.0 | H 1.941 | V -0.039 | pL -0.014 | vL 0.000 | ∇ 0.005
+Status saved
+U 5 | F 030720 | FPS 4571 | D 6 | rR:μσmM 0.02 0.10 0.00 0.52 | F:μσmM 480.5 45.6 260.0 490.0 | H 1.943 | V -0.033 | pL -0.006 | vL 0.000 | ∇ 0.002
+Status saved
+U 6 | F 036864 | FPS 4691 | D 7 | rR:μσmM 0.00 0.00 0.00 0.00 | F:μσmM 490.0 0.0 490.0 490.0 | H 1.944 | V -0.029 | pL -0.005 | vL 0.000 | ∇ 0.002
+Status saved
+U 7 | F 043008 | FPS 4365 | D 9 | rR:μσmM 0.02 0.09 0.00 0.38 | F:μσmM 481.5 33.4 336.0 490.0 | H 1.944 | V -0.022 | pL -0.008 | vL 0.000 | ∇ 0.007
+Status saved
+U 8 | F 049152 | FPS 4733 | D 10 | rR:μσmM 0.04 0.11 0.00 0.52 | F:μσmM 475.6 46.0 261.0 490.0 | H 1.943 | V -0.015 | pL -0.008 | vL 0.000 | ∇ 0.008
+Status saved
+U 9 | F 055296 | FPS 4656 | D 12 | rR:μσmM 0.04 0.11 0.00 0.52 | F:μσmM 475.6 46.0 261.0 490.0 | H 1.945 | V -0.012 | pL -0.002 | vL 0.000 | ∇ 0.001
+Status saved
+U 10 | F 061440 | FPS 4191 | D 13 | rR:μσmM 0.04 0.11 0.00 0.52 | F:μσmM 475.6 46.0 261.0 490.0 | H 1.945 | V -0.010 | pL -0.002 | vL 0.000 | ∇ 0.001
+Status saved
+U 11 | F 067584 | FPS 4523 | D 14 | rR:μσmM 0.02 0.09 0.00 0.52 | F:μσmM 482.7 36.1 261.0 490.0 | H 1.945 | V -0.007 | pL -0.002 | vL 0.000 | ∇ 0.003
+Status saved
+U 12 | F 073728 | FPS 4545 | D 16 | rR:μσmM 0.01 0.04 0.00 0.31 | F:μσmM 487.6 16.1 377.0 490.0 | H 1.945 | V -0.004 | pL -0.001 | vL 0.000 | ∇ 0.001
+Status saved
+U 13 | F 079872 | FPS 4556 | D 17 | rR:μσmM 0.01 0.04 0.00 0.31 | F:μσmM 487.6 16.1 377.0 490.0 | H 1.945 | V -0.003 | pL -0.001 | vL 0.000 | ∇ 0.001
+Status saved
+U 14 | F 086016 | FPS 4482 | D 18 | rR:μσmM 0.02 0.09 0.00 0.59 | F:μσmM 482.0 41.4 221.0 490.0 | H 1.942 | V -0.001 | pL -0.002 | vL 0.000 | ∇ 0.005
+Status saved
+U 15 | F 092160 | FPS 4279 | D 20 | rR:μσmM 0.03 0.11 0.00 0.59 | F:μσmM 478.7 46.8 221.0 490.0 | H 1.944 | V 0.002 | pL -0.001 | vL 0.000 | ∇ 0.004
+Status saved
+U 16 | F 098304 | FPS 4820 | D 21 | rR:μσmM 0.03 0.11 0.00 0.59 | F:μσmM 478.7 46.8 221.0 490.0 | H 1.945 | V 0.002 | pL 0.001 | vL 0.000 | ∇ 0.002
+Status saved
+U 17 | F 104448 | FPS 4392 | D 23 | rR:μσmM 0.03 0.11 0.00 0.59 | F:μσmM 478.7 46.8 221.0 490.0 | H 1.946 | V 0.001 | pL 0.000 | vL 0.000 | ∇ 0.001
+Status saved
+U 18 | F 110592 | FPS 4618 | D 24 | rR:μσmM 0.03 0.12 0.00 0.57 | F:μσmM 477.4 51.5 232.0 490.0 | H 1.944 | V 0.003 | pL -0.002 | vL 0.000 | ∇ 0.005
+Status saved
+U 19 | F 116736 | FPS 4529 | D 25 | rR:μσmM 0.03 0.12 0.00 0.57 | F:μσmM 475.6 53.4 232.0 490.0 | H 1.943 | V 0.006 | pL 0.000 | vL 0.000 | ∇ 0.004
+Status saved
+U 20 | F 122880 | FPS 3851 | D 27 | rR:μσmM 0.04 0.12 0.00 0.57 | F:μσmM 475.5 53.3 232.0 490.0 | H 1.945 | V 0.005 | pL 0.001 | vL 0.000 | ∇ 0.001
+Status saved
+Environments loaded
+
+Agent loaded
+
+returns_per_episode (mean):  0.1270645124013577
+num_frames (mean):  45832.0
+ 
+returns_per_episode (all seeds):  [0.24035759626236636, 0.013771428540349007]
+num_frames (all seeds):  [43196.0, 48468.0]

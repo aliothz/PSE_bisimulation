@@ -1,0 +1,7 @@
+Metadata-Version: 2.4
+Name: gym_generalization
+Version: 0.0.1
+Summary: Code for testing generalization of policies under distribution shifts
+Keywords: generalization,environment,robot,agent,rl
+Dynamic: keywords
+Dynamic: summary

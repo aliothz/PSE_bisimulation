@@ -1,0 +1,11 @@
+README.md
+setup.py
+gym_generalization/__init__.py
+gym_generalization/register.py
+gym_generalization.egg-info/PKG-INFO
+gym_generalization.egg-info/SOURCES.txt
+gym_generalization.egg-info/dependency_links.txt
+gym_generalization.egg-info/top_level.txt
+gym_generalization/envs/__init__.py
+gym_generalization/envs/colorablekeys.py
+gym_generalization/envs/coloredkeys.py
